@@ -1,3 +1,44 @@
-body {
-    background-color: tomato;
+/* Колір ссилки */
+.test-link {
+  color: black;
+}
+
+/* Колір при наведенні на ссилку :hover */
+.test-link:hover {
+  color: rgb(250, 0, 0);
+}
+
+/*Колір при фокусі на елементі :focus*/
+.test-link:focus {
+  color: tomato;
+}
+
+/* Колір активної ссилки :active */
+.test-link:active {
+  color: green;
+}
+
+/* Специфічність - 0 0 0 1 */
+a {
+  color: green;
+}
+
+/* Специфічність - 0 0 1 0 */
+.post-link {
+  color: orange;
+}
+
+/* Специфічність - 0 0 1 1 */
+a.post-link {
+  color: blue;
+}
+
+/* Специфічність - 0 0 2 0 */
+.post > .post-link {
+  color: red;
+}
+
+/* ✅ Специфічність - 0 0 2 1 */
+.post > a.post-link {
+  color: brown;
 }
