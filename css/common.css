@@ -1,0 +1,41 @@
+/* Кольори макету */
+
+/* Колір основного тексту #000000 */
+
+/* Вторинний колір тексту rgba(0, 0, 0, 0.8) */
+
+/*Білий #FFFFFF */
+
+/* Вторинний колір фону #F5F5F5 */
+
+/* Акцент #18A0FB */
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8); /*главный цвет текста*/
+  --tittle-text-color: #000000; /*текст заголовков*/
+  --accent-color: #18a0fb; /*цвет акцента*/
+  --primary-white-color: #f5f5f5; /*Главный цвет фона*/
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.logo {
+  color: var(--tittle-text-color);
+}
+
+
+/* Site nav */
+.site-nav .link {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #000000;
+}
+
+.site-nav .link.current {
+  color: var(--tittle-text-color);
+}

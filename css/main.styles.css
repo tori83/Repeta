@@ -1,0 +1,85 @@
+/* Кольори макету */
+
+/* Колір основного тексту #000000 */
+
+/* Вторинний колір тексту rgba(0, 0, 0, 0.8) */
+
+/*Білий #FFFFFF */
+
+/* Вторинний колір фону #F5F5F5 */
+
+/* Акцент #18A0FB */
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8); /*главный цвет текста*/
+  --tittle-text-color: #000000; /*текст заголовков*/
+  --accent-color: #18a0fb; /*цвет акцента*/
+  --primary-white-color: #f5f5f5; /*Главный цвет фона*/
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #000000;
+}
+
+.site-nav .link.current {
+  color: var(--tittle-text-color);
+}
+/*Герой*/
+
+.hero-tittle {
+  color: aqua;
+}
+
+/*section*/
+.section-tittle {
+  color: #000000;
+}
+
+/*Features ------------ селектор потомка*/
+.feature-list .tittle {
+  color: coral;
+}
+.feature-list .link {
+  color: #18a0fb;
+}
+
+/* Examples - Примеры работ*/
+.work-list .tittle {
+  color: var(--tittle-text-color);
+}
+
+/*Button - Кнопка*/
+.button {
+  color: var(--tittle-text-color);
+  background-color: var(--primary-white-color);
+
+  font-size: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+  border-color: blue;
+}
